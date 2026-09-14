@@ -1,4 +1,4 @@
-export const brand = {
+const brand = {
   name: "Mytool",
   tagline: {
     en: "Your AI work, made clearer.",
@@ -6,7 +6,7 @@ export const brand = {
   },
 };
 
-export const ui = {
+const ui = {
   en: {
     assess: "Take the assessment",
     viewResults: "View my result",
@@ -177,7 +177,7 @@ export const ui = {
   },
 };
 
-export const questions = [
+const questions = [
   {
     id: "fundamentals-1",
     category: "fundamentals",
@@ -378,4 +378,6 @@ export const questions = [
   },
 ];
 
-export const categoryOrder = ["fundamentals", "prompting", "toolChoice", "practice", "critical", "responsibility"];
+const categoryOrder = ["fundamentals", "prompting", "toolChoice", "practice", "critical", "responsibility"];
+
+window.MytoolData = { brand, ui, questions, categoryOrder };

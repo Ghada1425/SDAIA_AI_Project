@@ -1,4 +1,4 @@
-import { brand, categoryOrder, questions, ui } from "./data.js";
+const { brand, categoryOrder, questions, ui } = window.MytoolData;
 
 const app = document.querySelector("#app");
 let language = "en";

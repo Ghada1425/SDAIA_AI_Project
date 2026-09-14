@@ -66,7 +66,7 @@
 
 - HTML5 دلالي.
 - CSS3 مخصص مع Grid وFlexbox وMedia Queries وPrint Styles.
-- JavaScript ES Modules بدون إطار عمل أو اعتماد خارجي.
+- JavaScript Vanilla بدون إطار عمل أو اعتماد خارجي، ويعمل أيضًا عند فتح `index.html` مباشرة.
 - SVG للهوية البصرية، والأيقونات، والمخطط الراداري.
 - Google Fonts: Manrope وDM Mono وNoto Kufi Arabic.
 - لا توجد قاعدة بيانات أو خدمة خلفية؛ التقييم محلي داخل المتصفح.
