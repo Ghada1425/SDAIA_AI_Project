@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const port = Number(process.env.PORT || 3000);
+const host = process.env.HOST || "127.0.0.1";
 
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
@@ -46,7 +47,16 @@ const server = http.createServer((request, response) => {
   });
 });
 
-server.listen(port, () => {
-  console.log(`Mytool is running at http://localhost:${port}`);
+server.on("error", (error) => {
+  if (error.code === "EADDRINUSE") {
+    console.error(`Port ${port} is already in use. Close the other server or run with a different PORT.`);
+  } else {
+    console.error(error);
+  }
+  process.exitCode = 1;
+});
+
+server.listen(port, host, () => {
+  console.log(`Mytool is running at http://${host}:${port}`);
   console.log("Press Ctrl+C to stop the server.");
 });
