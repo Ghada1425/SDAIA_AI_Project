@@ -34,8 +34,8 @@ function icon(name, size = 18) {
 }
 
 function logo() {
-  return `<a class="brand" href="#" data-action="home" aria-label="NIVRA home">
-    <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+  return `<a class="brand" href="#" data-action="home" aria-label="Mytool home">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M7 29V8l11 11L29 8v21" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 29h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".45"/></svg></span>
     <span class="brand-name">${brand.name}</span>
   </a>`;
 }
@@ -57,7 +57,7 @@ function header() {
 }
 
 function shell(content, className = "") {
-  return `${header()}<main class="${className}">${content}</main><footer class="site-footer"><div>${logo()}<span class="footer-copy">${brand.tagline[language]}</span></div><span class="footer-note">NIVRA / AI skills assessment</span></footer>`;
+  return `${header()}<main class="${className}">${content}</main><footer class="site-footer"><div>${logo()}<span class="footer-copy">${brand.tagline[language]}</span></div><span class="footer-note">Mytool / AI skills assessment</span></footer>`;
 }
 
 function landing() {
@@ -84,7 +84,7 @@ function landing() {
         <div class="visual-grid-lines"></div>
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
         <div class="visual-center">
-          <div class="visual-mark"><i></i><i></i><i></i></div>
+          <div class="visual-mark"><svg viewBox="0 0 36 36" fill="none"><path d="M7 29V8l11 11L29 8v21" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 29h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".45"/></svg></div>
           <span class="visual-index">01</span>
         </div>
         <div class="visual-tag tag-top">JUDGMENT <span>+</span></div>
@@ -103,7 +103,7 @@ function landing() {
       <div class="measure-grid">${measures}</div>
     </section>
     <section class="start-panel">
-      <div><span class="panel-kicker">NIVRA / 03</span><h2>${t("startLine")}</h2><p>${t("startBody")}</p></div>
+      <div><span class="panel-kicker">Mytool / 03</span><h2>${t("startLine")}</h2><p>${t("startBody")}</p></div>
       <button class="button button-lime" data-action="start" type="button">${t("assess")} ${icon("arrow", 17)}</button>
     </section>
   </section>`);
