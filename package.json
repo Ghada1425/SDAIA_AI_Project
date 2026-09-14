@@ -1,0 +1,11 @@
+{
+  "name": "nivra-ai-skills-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NIVRA — a bilingual practical AI skills assessment.",
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "check": "node --check app.js && node --check data.js"
+  }
+}
