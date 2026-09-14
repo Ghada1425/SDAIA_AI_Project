@@ -94,6 +94,8 @@ http://localhost:3000
 node server.js
 ```
 
+على Windows، يمكنك الضغط مرتين على الملف `start-mytool.bat` لتشغيل الخادم وفتح الموقع تلقائيًا في المتصفح.
+
 لإيقاف المعاينة اضغط `Ctrl + C`. ولإجراء فحص بناء JavaScript:
 
 ```bash
